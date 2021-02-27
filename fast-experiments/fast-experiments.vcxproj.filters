@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\common">
+      <UniqueIdentifier>{fa06d442-9a74-4946-9555-7ce77ff338a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\framework">
+      <UniqueIdentifier>{c8742177-0ffa-4c51-8951-96eb6fb313ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\view">
+      <UniqueIdentifier>{fecab306-bb2b-4cd6-aff2-69848efcfe08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\common">
+      <UniqueIdentifier>{c5b256bb-3398-48cd-964a-5148f3de7fdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\framework">
+      <UniqueIdentifier>{7a5d04ce-b608-431e-8a76-fde887da029e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\view">
+      <UniqueIdentifier>{936886e3-76f6-4886-9942-2b53a7097bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\config">
+      <UniqueIdentifier>{6d693a33-a346-4463-bb14-a83f5c43d4e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\framework\io">
+      <UniqueIdentifier>{62734443-6d1f-41b4-86d8-96a4bf26c855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\framework\io">
+      <UniqueIdentifier>{dde0efb6-762d-421c-9be4-2888f299d3aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fast-experimentsDlg.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="fast-experiments.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="UserConfig.h">
+      <Filter>头文件\config</Filter>
+    </ClInclude>
+    <ClInclude Include="FastExperiment.h">
+      <Filter>头文件\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="HSNPacketReader.h">
+      <Filter>头文件\framework\io</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketReader.h">
+      <Filter>头文件\framework\io</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultWriter.h">
+      <Filter>头文件\framework\io</Filter>
+    </ClInclude>
+    <ClInclude Include="TextPacketReader.h">
+      <Filter>头文件\framework\io</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseScheme.h">
+      <Filter>头文件\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fast-experiments.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="fast-experimentsDlg.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="FastExperiment.cpp">
+      <Filter>源文件\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="HSNPacketReader.cpp">
+      <Filter>源文件\framework\io</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketReader.cpp">
+      <Filter>源文件\framework\io</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultWriter.cpp">
+      <Filter>源文件\framework\io</Filter>
+    </ClCompile>
+    <ClCompile Include="TextPacketReader.cpp">
+      <Filter>源文件\framework\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fastexperiments.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\fastexperiments.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\fast-experiments.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
