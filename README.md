@@ -1,2 +1,10 @@
 # final-experiments
-用于读取一个数据包，检测你的方案，写出结果
+这是一个基于MFC的离线网络实验框架，它将读取数据包，你的方案，和显示方案结果这三个过程进行了规范。
+
+使用该框架你只需要进行如下几个步骤即可轻松进行你的方案实现。
+
+1. 新建你自己的Scheme类，继承于BaseScheme，并重写start方法，在start方法中完成你自己的方案。
+
+2. 在FinalFramework中修改createShcheme的返回值，如有必要也可修改createPacketReader的返回值，或者直接使用继承重写这两个方法。
+
+3. 在你自己的UI中添加对应的组件，并在CHomeViewDlg中修改initDlgData和initUserConfig两个方法，其中initDlgData用于初始化编辑框默认参数，initUserConfig用于将读取到的参数保存到UserConfig中。
