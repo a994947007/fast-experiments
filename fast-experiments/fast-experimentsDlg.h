@@ -5,6 +5,7 @@
 #pragma once
 
 #include "UserConfig.h"
+#include "FastExperiment.h"
 
 
 // CfastexperimentsDlg 对话框
@@ -33,12 +34,15 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 
+	virtual FastExperiment * createFastExperiment();
 	virtual void initData();
 	virtual void initUserConfig();
+
 
 	template <typename T>
 	inline T getValueByControID(const ULONG controID);
 	inline void setDefaultValue(const ULONG controID, LPCTSTR value);
+
 
 	DECLARE_MESSAGE_MAP()
 public:

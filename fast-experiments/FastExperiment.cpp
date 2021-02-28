@@ -19,6 +19,11 @@ FastExperiment::~FastExperiment()
 		delete baseScheme;
 		baseScheme = NULL;
 	}
+
+	if (resultWriter != NULL) {
+		delete resultWriter;
+		resultWriter = NULL;
+	}
 }
 
 void FastExperiment::run()

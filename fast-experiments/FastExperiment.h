@@ -19,10 +19,9 @@ public:
 	void run();
 
 protected:
-	BaseScheme * createScheme(const UserConfig & userConfig);
-	PacketReader * createPacketReader();
-	ResultWriter* createResultWriter(const char * resultPath);
-	
+	virtual BaseScheme * createScheme(const UserConfig & userConfig);
+	virtual PacketReader * createPacketReader();
+	virtual ResultWriter* createResultWriter(const char * resultPath);
 
 private: 
 	void init(const UserConfig&);

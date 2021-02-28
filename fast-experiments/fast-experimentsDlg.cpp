@@ -202,8 +202,9 @@ void CfastexperimentsDlg::OnBnClickedOk()
 
 	initUserConfig();
 
-	FastExperiment fastExperiment(userConfig);
-	fastExperiment.run();
+	FastExperiment * experiment = createFastExperiment();
+	experiment->run();
+	delete experiment;
 
 	CString msg("运行完毕！");
 	AfxMessageBox(msg);
@@ -259,6 +260,12 @@ void CfastexperimentsDlg::initData()
 void CfastexperimentsDlg::initUserConfig()
 {
 	
+}
+
+// 设置当前实验
+FastExperiment * CfastexperimentsDlg::createFastExperiment()
+{
+	return new FastExperiment(userConfig);
 }
 
 
